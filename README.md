@@ -3,6 +3,15 @@
 ## Deskripsi Project
 Project ini menganalisis program loyalitas maskapai penerbangan menggunakan dataset customer flight activity dan customer loyalty history. Tujuannya adalah untuk mengungkap tren penerbangan, penggunaan poin loyalitas, dan mengidentifikasi korelasi antara loyalitas pelanggan dengan pendapatan.
 
+## Tools and Technologies
+- **Programming Language:** Python
+- **Framework:** PySpark
+- **Libraries:**
+  - `matplotlib`: Untuk visualisasi data
+  - `seaborn`: Untuk visualisasi data yang lebih kompleks
+- **Development Environment:** Visual Studio Code
+- **Data Storage:** CSV, Parquet
+
 ## Struktur Project
 Project ini tersusun dalam direktori berikut:
 
