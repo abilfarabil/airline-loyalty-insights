@@ -1,0 +1,41 @@
+# Dokumentasi Project Airline Loyalty Insights
+
+## Penulis
+[Abil Farabil]
+
+## Pendahuluan
+Project ini bertujuan untuk menganalisis data pelanggan maskapai penerbangan menggunakan PySpark. Data yang digunakan terdiri dari informasi aktivitas penerbangan dan riwayat loyalitas pelanggan. Analisis ini membantu dalam memahami pola penggunaan poin dan pengaruh status loyalitas terhadap pendapatan.
+
+## Cara Menjalankan Skrip
+1. Pastikan PySpark sudah terinstal dan diatur di lingkungan pengembangan Anda.
+2. Download dataset yang diperlukan dan pastikan strukturnya sesuai dengan folder berikut:
+   /airline_loyalty_insights
+   ├── data/
+   │   ├── calendar.csv
+   │   ├── customer_flight_activity.csv
+   │   └── customer_loyalty_history.csv
+   ├── output/
+   │   ├── graphs/
+   │   └── results/
+   └── analysis.py
+3. Buka terminal atau command prompt.
+4. Arahkan ke direktori project.
+5. Jalankan perintah berikut:
+   python analysis.py
+6. Hasil analisis dan grafik akan disimpan di dalam folder output/results dan output/graphs.
+
+## Analisis Dataset
+Analisis yang dilakukan pada dataset meliputi:
+- **Tren Penerbangan Bulanan**: Saya menganalisis jumlah penerbangan per bulan untuk mengidentifikasi pola dan tren dalam aktivitas penerbangan. Ini penting untuk memahami fluktuasi dalam permintaan pelanggan.
+- **Penggunaan dan Pengumpulan Poin**: Saya menghitung total poin yang dikumpulkan dan ditebus per bulan. Ini membantu untuk mengevaluasi efektivitas program loyalitas dalam menarik dan mempertahankan pelanggan.
+- **Hubungan Pendapatan dan Status Loyalitas**: Saya menganalisis rata-rata pendapatan berdasarkan status loyalitas (Gold, Silver, Bronze). Ini memungkinkan saya untuk melihat seberapa besar kontribusi pelanggan loyal terhadap pendapatan maskapai.
+- **Rata-rata Jarak Per Penerbangan**: Saya menghitung rata-rata jarak penerbangan untuk mengidentifikasi pola perjalanan pelanggan.
+- **Persentase Penggunaan Poin per Status Loyalitas**: Saya menghitung persentase penggunaan poin berdasarkan status loyalitas untuk mengevaluasi seberapa efektif poin yang dikumpulkan digunakan oleh pelanggan.
+
+## Proses Extraction, Cleaning, dan Transformation
+- **Extraction**: Saya memuat data dari file CSV ke dalam DataFrame PySpark. Ini penting untuk memastikan data terstruktur dengan baik untuk analisis lebih lanjut.
+- **Cleaning**: Saya melakukan pembersihan data dengan memeriksa nilai null dan duplikat. Langkah ini penting karena data yang bersih memastikan hasil analisis yang akurat. Data yang tidak bersih dapat menyebabkan kesimpulan yang salah.
+- **Transformation**: Data yang sudah bersih kemudian digabungkan dan kolom tambahan dibuat untuk analisis lebih lanjut. Misalnya, saya menambahkan kolom untuk menghitung persentase poin yang telah ditebus. Transformasi ini membantu saya dalam mendapatkan wawasan yang lebih mendalam dari dataset.
+
+## Kesimpulan
+Dengan analisis yang dilakukan, Saya dapat menarik kesimpulan mengenai efektivitas program loyalitas maskapai penerbangan, serta pola perjalanan dan penggunaan poin pelanggan. Hasil analisis ini dapat digunakan untuk mengambil keputusan strategis yang lebih baik dalam pengelolaan program loyalitas dan pemasaran.
